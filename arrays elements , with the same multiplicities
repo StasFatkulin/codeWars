@@ -37,13 +37,10 @@ var a=0;
   
 if(array1!==null&&array2!==null)
 {
-  
   for (var i=0 ; i < array1.length ; i++)
   {
-    
       for (var j=0 ; j < array2.length; j++)
       {
-        
            if(Math.sqrt(array2[j])===array1[i]||Math.sqrt(array1[i])===array2[j])
            {
              a=a+1;
@@ -55,25 +52,23 @@ if(array1!==null&&array2!==null)
              a=a+0;
            }
       }
-   
- }     
+   }     
+   console.log(array2);  
+   console.log(a);
+   console.log(array1.length); 
 
-console.log(array2);  
-console.log(a);
-console.log(array1.length); 
-
-      if(a===array1.length)
-      {
-        return true;
-      }
-      else
-      {
-        return false;
-      }
+   if(a===array1.length)
+   {
+      return true;
+   }
+   else
+   {
+      return false;
+   }
 }
 else
 {
-    return false;
+   return false;
 }
   
 } 
