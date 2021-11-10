@@ -12,26 +12,21 @@ Tips and notes: it helps to start counting from 1 up to n, instead of the usual 
 For example, with n=7 and k=3 josephus(7,3) should act this way.
 */
 function josephus(items,k){
-  //your code here
-  var arr=[];
+var arr=[];
 var a=0;
-arr.unshift(0);
   for (var i=0; i<items.length;  i++)
     { a++;
       if(a<k)
       {
         items.push(items[i]);
-     //   console.log(items[i])
       }
       else
         {
           a=0;
           arr.push(items[i]);
-                  //  console.log(arr)
         }
-
     } 
-  arr.shift();
+  return arr;
   return arr;
   //console.log(arr);
 }
