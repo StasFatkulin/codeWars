@@ -1,0 +1,15 @@
+/*
+A circle with radius r is placed in a right angled corner, where r is an integer and ≥ 1.
+What is the radius of the smaller circle, rounded to two decimal places?
+*/
+function cornerCircle(r) {
+  // your code
+  var d =Math.sqrt(2*(2*r)*(2*r));
+  var dcp = d-2*r;
+  var a = Math.sqrt(dcp*dcp/2);
+  var c = dcp-a;
+  var dm = dcp-2*c;
+  var rm= dm/2;
+  
+  return Number(rm.toFixed(2))
+}
