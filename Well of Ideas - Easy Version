@@ -1,0 +1,18 @@
+function well(x){
+let i;
+let a=0;
+  
+  for (i=0;i<x.length;i++)
+  {
+   
+    a = (x[i]==='good') ? a+1 : a;
+   
+    
+  }
+  switch (a)
+    {
+      case 0: return 'Fail!';break;  
+      case 1:case 2: return 'Publish!';break;  
+      default: return 'I smell a series!'; 
+    }
+}
