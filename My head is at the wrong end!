@@ -1,0 +1,13 @@
+function fixTheMeerkat(arr) {
+ //your code here 
+  let i;
+  let a=[,,];
+  for (i=0;i<3;i++)
+    {
+      
+     a[2-i] = arr[i];console.log(arr[2-i]);
+    }
+   
+   return a;
+
+  }
